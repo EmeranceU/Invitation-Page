@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation - Copy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="invitation-wrapper">
+        <div class="invitation-header">
+            <span class="names">SOPHIA + MICHAEL</span>
+            <span class="subtitle">invite you to celebrate</span>
+        </div>
+        <div class="invitation-main">
+            <div class="invitation-photo">
+                <img src="images/image3.avif" alt="Wedding Couple" />
+            </div>
+            <div class="invitation-details-card">
+                <div class="heart">&#x2764;</div>
+                <div class="date">10th september 2026</div>
+                <div class="venue">at Riverside Hall</div>
+                <div class="formal">Reception & Dinner<br>to Follow</div>
+                <div class="Verse">1 Corinthians 13:13</div>
+            </div>
+        </div>
+        <div class="cta-section">
+            <button class="rsvp-btn">RSVP</button>
+            <p class="cta-message">We look forward to celebrating with you!</p>
+        </div>
+    </div>
+</body>
+        <!-- ...existing code... -->
+        <section id="rsvp" style="margin-top: 2em;">
+            <h2>RSVP</h2>
+            <form action="mailto:your@email.com" method="POST" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="attending">Will you attend?</label><br>
+                <select id="attending" name="attending" required>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="3"></textarea><br><br>
+                <input type="submit" value="Send RSVP">
+            </form>
+            <p style="font-size: 0.9em; color: #888;">Submitting will open your email app to send the RSVP.</p>
+        </section>
