@@ -4,7 +4,9 @@
 	margin-top: 24px;
 }
 	.cta-section .cta-message {
+		display: flex;
 		margin-top: 24px;
+		flex-direction: column;
 	}
 .rsvp-btn {
 	background: #bfa14a;
@@ -27,10 +29,9 @@
 /* If these properties belong to a selector, restore them properly. Example: .cta-section */
 .cta-section {
 	display: flex;
-	gap: 24px;
-	justify-content: center;
-	align-items: stretch;
-	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
 }
 .invitation-photo {
 	flex: 2;
